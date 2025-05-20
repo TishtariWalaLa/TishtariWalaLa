@@ -1,55 +1,51 @@
 body {
-    font-family: sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #fff7e0;
+  color: #0b305d;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background: #222;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  background-color: #fbc45a;
+  padding: 20px;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+.logo {
+  max-width: 120px;
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
+h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-.product {
-    background: white;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 200px;
-    text-align: center;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+li {
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #0b305d;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #07213f;
 }
 
 footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #fbc45a;
+  padding: 10px;
+  margin-top: 20px;
 }
