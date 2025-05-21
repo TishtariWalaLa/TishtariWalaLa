@@ -173,3 +173,8 @@ footer a:hover {
     width: 80%;
   }
 }
+/* تأثير التلاشي */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
