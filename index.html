@@ -9,35 +9,52 @@
 </head>
 <body>
 
+  <!-- نافذة ترحيبية -->
+  <div id="welcome-popup" class="popup">
+    <div class="popup-content">
+      <img src="https://k.top4top.io/p_3428yji400.png" alt="شعار المتجر" class="popup-logo">
+      <p id="welcome-message"></p>
+    </div>
+  </div>
+
   <!-- شريط العروض -->
-  <div class="top-banner"><span>🚚 توصيل وشحن مجاني للطلبات فوق ٣٩٩ ريال</span></div>
+  <div class="top-banner"><span>🚚 توصيل مجاني للطلبات فوق ٣٩٩ ريال</span></div>
   <div class="promo-banner"><span>🎉 كل 3 طلبات خلال نفس الشهر = خصم تلقائي 5٪ على طلبك القادم!</span></div>
 
   <!-- رأس الصفحة -->
   <header>
-    <img src="https://c.top4top.io/p_3427l0nan0.png" alt="شعار المتجر" class="logo" />
+    <img src="https://k.top4top.io/p_3428yji400.png" alt="شعار المتجر" class="logo" />
     <h1>تشتري ولا لا؟</h1>
     <nav>
-      <a href="#">الرئيسية</a>
+      <a href="index.html">الرئيسية</a>
       <a href="products.html">المنتجات</a>
       <a href="contact.html">تواصل معنا</a>
-      <a href="#">EN</a>
+      <a href="cart.html">سلّتي</a>
+      <button onclick="toggleLanguage()">EN</button>
     </nav>
   </header>
 
   <!-- محتوى تعريفي -->
   <main>
     <section class="hero">
-      <img src="https://c.top4top.io/p_3427l0nan0.png" alt="شعار المتجر" />
       <h2>كل اللي تحتاجه... توصلك لباب بيتك 🔥</h2>
       <p>اشتر من المتجر أو عن طريق واتساب، وادفع براحتك بمدى، فيزا، ماستر كارد، تابي، تمارا.</p>
     </section>
   </main>
+
+  <!-- تسجيل دخول -->
+  <section class="login-box">
+    <h3>تسجيل دخول</h3>
+    <input type="text" placeholder="رقم الجوال" id="phone">
+    <button onclick="sendCode()">إرسال الكود</button>
+  </section>
 
   <!-- تذييل -->
   <footer>
     <p>للتواصل على واتساب: <a href="https://wa.me/966553745123" target="_blank">+9660553745123</a></p>
     <p>© 2025 تشتري ولا لا؟ جميع الحقوق محفوظة</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
