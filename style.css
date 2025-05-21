@@ -46,7 +46,7 @@ header {
   height: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0.5em 0;
   font-weight: bold;
 }
@@ -54,45 +54,29 @@ h1, h2 {
 nav {
   background-color: #0B305D;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-nav a {
+nav a, nav button {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
   font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-nav a:hover {
+nav a:hover, nav button:hover {
   text-decoration: underline;
 }
 
-/* القسم التسويقي */
+/* القسم التعريفي */
 .hero {
   padding: 40px 20px;
   background-color: #fef2d0;
-}
-
-.promo-img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* الأزرار */
-.btn {
-  background-color: #0B305D;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-  border-radius: 6px;
-}
-
-.btn:hover {
-  background-color: #07213f;
 }
 
 /* تذييل */
@@ -112,14 +96,80 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* الأزرار */
+.btn {
+  background-color: #0B305D;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #07213f;
+}
+
+/* تسجيل الدخول */
+.login-box {
+  background: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(11, 48, 93, 0.1);
+}
+
+.login-box input {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* النافذة المنبثقة */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(251, 196, 90, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.popup-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* صفحات المنتجات/التواصل/السلة */
+.products, .contact, .cart {
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
 /* تجاوب */
 @media (max-width: 768px) {
-  nav a {
+  nav a, nav button {
     display: block;
     margin: 5px 0;
   }
 
-  .promo-img {
-    max-width: 90%;
+  .popup-content {
+    width: 80%;
   }
 }
