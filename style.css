@@ -1,3 +1,4 @@
+/* إعدادات أساسية */
 body {
   font-family: 'Tajawal', sans-serif;
   background-color: #fff7e0;
@@ -7,6 +8,33 @@ body {
   padding: 0;
 }
 
+/* شريط العرض المتحرك */
+.top-banner, .promo-banner {
+  position: relative;
+  background-color: #ffeb99;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  padding: 0 10px;
+}
+
+.top-banner span, .promo-banner span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  font-weight: bold;
+  color: #0B305D;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* رأس الصفحة */
 header {
   background-color: #FBC45A;
   padding: 20px;
@@ -14,10 +42,13 @@ header {
 
 .logo {
   max-width: 100px;
+  width: 80px;
+  height: auto;
 }
 
 h1, h2 {
   margin: 0.5em 0;
+  font-weight: bold;
 }
 
 nav {
@@ -29,22 +60,27 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+  font-size: 1rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* القسم التسويقي */
 .hero {
   padding: 40px 20px;
   background-color: #fef2d0;
 }
 
-.hero img {
-  max-width: 150px;
+.promo-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   margin-bottom: 20px;
 }
 
+/* الأزرار */
 .btn {
   background-color: #0B305D;
   color: white;
@@ -59,35 +95,31 @@ nav a:hover {
   background-color: #07213f;
 }
 
+/* تذييل */
 footer {
   background-color: #FBC45A;
-  padding: 10px;
+  color: #0B305D;
+  padding: 20px;
   margin-top: 20px;
 }
 
-/* أشرطة متحركة */
-.top-banner, .promo-banner {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  background-color: #ffeb99;
-  padding: 10px 0;
-  font-weight: bold;
-  font-size: 16px;
+footer a {
   color: #0B305D;
+  text-decoration: none;
 }
 
-.top-banner span, .promo-banner span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scrollText 12s linear infinite;
+footer a:hover {
+  text-decoration: underline;
 }
 
-@keyframes scrollText {
-  0% {
-    transform: translateX(0%);
+/* تجاوب */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
   }
-  100% {
-    transform: translateX(-100%);
+
+  .promo-img {
+    max-width: 90%;
   }
 }
