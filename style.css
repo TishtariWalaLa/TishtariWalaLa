@@ -7,7 +7,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* تأثير التلاشي للنافذة */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
 /* شريط العرض المتحرك */
 .top-banner, .promo-banner {
   position: relative;
